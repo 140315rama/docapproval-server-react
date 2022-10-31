@@ -12,6 +12,7 @@ import 'ids-enterprise-wc/components/ids-pie-chart/ids-pie-chart-base';
 const App = () => {
   return (
     <Home />
+    // test 
   );
 };
 
