@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Musthead = () => {
+const Masthead = () => {
   return (
     <>
         <ids-masthead>
@@ -20,4 +20,4 @@ const Musthead = () => {
   );
 };
 
-export default Musthead;
+export default Masthead;

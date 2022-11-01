@@ -10,7 +10,7 @@ const History = () => {
   useEffect(() => {
     async function fetchData() {
       // Do an ajax request
-      const response = await fetch('assets/data/history.json');
+      const response = await fetch('assets/data/books.json');
       const data = await response.json()
 
       // Set columns
@@ -29,7 +29,7 @@ const History = () => {
           <ids-data-grid
             ref={dataGridRef}
             virtual-scroll="false"
-            row-height="small"
+            row-height="medium"
           ></ids-data-grid>
         </ids-layout-grid-cell>
       </ids-layout-grid>

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #f0f0f0 !important;
   font-family: helvetica,arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7,4 +8,8 @@ body {
 
 code {
   font-family: helvetica,arial,sans-serif;
+}
+
+.ids-container {
+  margin-top: 38px !important;
 }

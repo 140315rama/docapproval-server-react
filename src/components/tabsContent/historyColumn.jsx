@@ -1,30 +1,48 @@
 export const getGridColumns = formatters => [
-    {
-      id: 'docId',
-      name: 'docId',
-      field: 'docId',
-      sortable: true,
-      formatter: formatters?.text,
-      align: 'left'
-    },
-    {
-      id: 'description',
-      name: 'Description',
-      field: 'description',
-      formatter: formatters?.text
-    },
-    {
-      id: 'date',
-      name: 'date',
-      field: 'date',
-      sortable: true,
-      formatter: formatters?.text
-    },
-    {
-      id: 'unit',
-      name: 'unit',
-      field: 'unit',
-      formatter: formatters?.text
-    }
-  ];
-  
+  {
+    id: 'id',
+    name: 'ID',
+    formatter: formatters?.rowNumber,
+    sortable: true,
+    readonly: true,
+    width: 50
+  },
+  {
+    id: 'documentId',
+    name: 'Document Id',
+    field: 'documentId',
+    sortable: false,
+    readonly: true,
+    formatter: formatters?.text
+  },
+  {
+    id: 'documentType',
+    name: 'Document Type',
+    field: 'documentType',
+    sortable: false,
+    readonly: true,
+    formatter: formatters?.text
+  },
+  {
+    id: 'description',
+    name: 'Description',
+    field: 'description',
+    sortable: false,
+    readonly: true,
+    formatter: formatters?.text
+  },
+  {
+    id: 'dateCreated',
+    name: 'Date Created',
+    field: 'dateCreated',
+    formatter: formatters?.date
+  },
+  {
+    id: 'unit',
+    name: 'Unit',
+    field: 'unit',
+    sortable: false,
+    readonly: true,
+    formatter: formatters?.text
+  }
+];

@@ -25,17 +25,22 @@ section {
   z-index: 9000;
   padding: 0px;
   position: fixed;
-  margin-bottom: 38px;
+  margin-bottom: 0px;
+  
 }
 
 .hero-header {
   height: 370px;  
   max-height: 370px;
   min-height: 370px; 
-  margin-top: 38px !important;
 }
 
 .personalize-text {
   font-size: 0.8rem;
   line-height: 1.2rem;
+}
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important
 }

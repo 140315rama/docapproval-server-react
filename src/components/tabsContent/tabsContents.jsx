@@ -42,7 +42,18 @@ const TabsContent = () => {
             <List />
           </ids-tab-content>
           <ids-tab-content active={activeTab === 'capex-history'}>
-          <History/>
+            <ids-layout-grid rows="1" gap="md" cols="1">
+              <ids-layout-grid-cell>
+                <ids-card>
+                  <div slot="card-header">
+                    <h2 class="card-title">Newest Documents In Progress</h2>
+                  </div>
+                  <div slot="card-content">
+                    <History />
+                  </div>
+                </ids-card>
+              </ids-layout-grid-cell>
+            </ids-layout-grid>
           </ids-tab-content>
         </div>
       </ids-tabs-context>

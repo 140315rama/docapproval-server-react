@@ -6,7 +6,7 @@ const Information= () => {
     return (
     <><ids-layout-grid rows="1" gap="md" cols="4">
         <ids-layout-grid-cell>
-          <ids-card>
+          <ids-card style={{backgroundColor:'#fff'}}>
             <div slot="card-header">
               <h2 class="card-title">Total Documents</h2>
             </div>
@@ -53,7 +53,9 @@ const Information= () => {
           </ids-card>
         </ids-layout-grid-cell>
 
-      </ids-layout-grid></>
+      </ids-layout-grid>
+      
+    </>
     );
 };
 
